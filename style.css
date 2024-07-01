@@ -215,6 +215,7 @@ nav ul li a:hover {
     width: 1000px;
     margin: 0 auto; 
 } 
+
 /*creating line for timeline*/
 .main-container::after{ 
     content: ''; 
