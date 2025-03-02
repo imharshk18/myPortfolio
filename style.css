@@ -124,6 +124,29 @@ nav ul li a:hover {
     color: #fff;
 }
 
+.resume-button {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    background: #69443c;
+    color: #fff ;
+    border: 2px solid #69443c;
+    padding: 10px 200px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 100 10px;
+    transition: background 0.3s ease, color 0.3s ease;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.resume-button:hover {
+    background: #fff;
+    color: #69443c;
+}
+
 #education-section {
     width: 100%;
     padding: 60px 20px;
@@ -197,8 +220,6 @@ nav ul li a:hover {
     width: 100%;
     text-align: center;
     background: #ffffffca;
-    /* margin-top: 25px;
-    margin-bottom: 75px; */
     padding: 60px 20px;
 }
 
@@ -216,7 +237,6 @@ nav ul li a:hover {
     margin: 0 auto; 
 } 
 
-/*creating line for timeline*/
 .main-container::after{ 
     content: ''; 
     position: absolute; 
@@ -227,7 +247,6 @@ nav ul li a:hover {
     left: 50%; 
     margin-left: -3px; 
 } 
-/*Adjusting box of all content*/
 .text-wrapper{ 
     padding: 15px 15px; 
     position: relative; 
@@ -239,7 +258,7 @@ nav ul li a:hover {
     content: '';
     position: absolute;
     width: 30px;
-    height: 30px; /* Adjust height to fit the image */
+    height: 30px;
     right: -27px;
     background-image: url('images/timeline.png');
     background-size: cover;
@@ -247,18 +266,15 @@ nav ul li a:hover {
     border-radius: 50%;
     z-index: 1;
 } 
-/*for left events*/
 .left{ 
     left: -2.5%; 
 } 
-/*for right events*/
 .right{ 
     left:51.5%; 
 } 
 .right::after{ 
     left:-32px; 
 } 
-/*content box colour padding and radius for circular corner*/
 .content{ 
     padding: 15px 15px 15px 17px; 
     border: 1px solid #ddd;
@@ -274,7 +290,6 @@ nav ul li a:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/*setting text property of event heading*/
 .content h3{ 
     font-size: 1.2em;
     font-family: Arial, sans-serif;
@@ -288,7 +303,6 @@ nav ul li a:hover {
     margin-bottom: 5px;
     font-size: 0.8em;
 }
-/*setting text property of event content*/
 .content p{ 
     color: #616161; 
     font-weight: 300; 
@@ -296,12 +310,11 @@ nav ul li a:hover {
     margin-top: 10px; 
 } 
 
-/* Date Styling */
 .date {
     position: absolute;
-    top: 17%; /* Center vertically */
+    top: 17%; 
     transform: translateY(-50%);
-    color: #69443c; /* Matching the color theme */
+    color: #69443c; 
     font-family: Arial, sans-serif;
     font-size: 0.9em;
     font-weight: bold;
@@ -309,7 +322,6 @@ nav ul li a:hover {
     min-width: 120px;
 }
 
-/* Positioning dates based on the side */
 .left .date {
     left: 570px; 
 }
@@ -419,7 +431,7 @@ nav ul li a:hover {
 #certifications-section {
     width: 100%;
     padding: 60px 20px;
-    background: #ffffffca; /* Adjust the color to match your design */
+    background: #ffffffca; 
     text-align: center;
 }
 
@@ -440,27 +452,27 @@ nav ul li a:hover {
 }
 
 .cert-image {
-    width: 300px; /* Adjust size accordingly */
+    width: 300px; 
     height: auto;
     transition: transform 0.3s ease;
     cursor: pointer;
 }
 
 .cert-image:hover {
-    transform: scale(1.1); /* Slightly enlarges the image on hover */
+    transform: scale(1.1); 
 }
 
-/* Modal Styling */
+
 .modal {
-    display: none; /* Hidden by default */
+    display: none; 
     position: fixed;
-    z-index: 1000; /* Sit on top */
+    z-index: 1000; 
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
+    width: 100%; 
+    height: 100%; 
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.8); /* Black with opacity */
+    background-color: rgba(0, 0, 0, 0.8); 
     cursor: pointer;
 }
 
@@ -472,10 +484,9 @@ nav ul li a:hover {
     width: auto;
     max-width: 85%;
     max-height: 85%;
-    transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+    transition: transform 0.3s ease; 
 }
 
-/* Close Button */
 .close {
     position: absolute;
     top: 10px;
@@ -535,3 +546,4 @@ footer {
 .footer-social-links img:hover {
     transform: scale(1.1);
 }
+
